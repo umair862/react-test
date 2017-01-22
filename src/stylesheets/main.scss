@@ -1,0 +1,58 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+$basefont: 10px;
+body {
+  font: $basefont $font-stack;
+  color: $primary-color;
+}
+
+//modular naming convention ref: http://thesassway.com/advanced/modular-css-naming-conventions
+
+.component{
+background-color: #e7e6e6;
+width: 40%;
+margin: 3rem 5%;
+border: 1px solid #000;
+display: block;
+float: left;    
+height: 30rem; 
+position: relative;
+}
+
+.component-heading{
+text-align: center;
+    font-size: 1.8rem;
+    margin-top: 0.8rem;
+}
+
+.component-button{
+    position: absolute;
+    margin-left: 50%;
+    left: -75px;
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    background-color: #5e9cd3;
+    border: 1px solid #6187a8;
+    border-radius: 5px;
+    margin-top: 120px;
+    font-size: 1.2rem;
+}
+
+.component-textbox{
+    position: absolute;
+    width: 300px;
+    height: 80px;
+    margin-left: 50%;
+    left: -150px;
+    margin-top: 90px;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width : 768px) {
+    
+    .component{
+width: 90%;
+}
+
+    }

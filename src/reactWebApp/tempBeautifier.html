@@ -1,0 +1,42 @@
+<div className='registrationComponent'>
+    <div className="registrationInnerWrapper">
+        <div className="basicDetailsContainer">
+            <div className="row">
+                <div className="col-xs-12">
+                    <div className="DetailsSection">
+                        <div className="col-xs-12 detailHeading">
+                            Registration details
+                        </div>
+                        <div className="col-sm-12">
+                            <label className="hidden-xs col-sm-4 regolabel">FirstName: </label>
+                            <input type="text" className="inputStyle" placeholder="Firstname * " ref="firstName" defaultValue={this.state.firstName} onChange={this.updateValue.bind(this, 'firstName')} onBlur={this._enableGo.bind(this)}/>
+                        </div>
+                        <div className="col-sm-12">
+                            <label className="hidden-xs col-sm-4 regolabel">MiddleName: </label>
+                            <input type="text" className="inputStyle" placeholder="Middlename" ref="middleName" defaultValue={this.state.middleName} onChange={this.updateValue.bind(this, 'middleName')} />
+                        </div>
+                        <div className="col-sm-12">
+                            <label className="hidden-xs col-sm-4 regolabel">FamilyName: </label>
+                            <input type="text" className="inputStyle" placeholder="Familyname *" ref="familyName" defaultValue={this.state.familyName} onChange={this.updateValue.bind(this, 'familyName')} onBlur={this._enableGo.bind(this)}/>
+                        </div>
+
+                        <div className="col-sm-12">
+                            <label className="hidden-xs col-sm-4 regolabel">Mobile: </label>
+                            <input type="text" className="inputStyle" placeholder="Mobile *" ref="mobile" defaultValue={this.state.mobile} onChange={this.updateValue.bind(this, 'mobile')} onBlur={this._enableGo.bind(this)}/>
+
+                        </div>
+
+                        <div className="col-sm-12">
+                            <label className="hidden-xs col-sm-4 regolabel">Date of Birth: </label>
+                            <input type="text" className="inputStyle" placeholder="Date of Birth" ref="dob" defaultValue={this.state.dob} onChange={this.updateValue.bind(this, 'dob')}/>
+
+                            <div className="regobtn">
+                                <Link to="/customer-details" className="btn form-btn" disabled={this.state.btnDisabled} onClick={this.props.save}>Go</Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
